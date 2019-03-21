@@ -1,0 +1,12 @@
+RewriteEngine Off
+
+#No access to files
+<Files config.ini>
+    order allow,deny
+    Deny from all
+</Files>
+
+<Files database.php>
+    order allow,deny
+    Deny from all
+</Files>
